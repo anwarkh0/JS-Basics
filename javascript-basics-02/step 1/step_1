@@ -1,5 +1,5 @@
 let image = document.querySelector("#image1");
-image.addEventListener('mouseover', changeimg)
+image.addEventListener('mouseover', changeimg);
 function changeimg(e){
-    e.target.setAttribute("src","./images/image1_2.jpg")
+    e.target.setAttribute("src","./images/image1_2.jpg");
 }
