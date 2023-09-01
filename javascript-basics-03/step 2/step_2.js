@@ -1,5 +1,12 @@
-let link = document.querySelectorAll("a")
-link.forEach(a)
+let links = document.querySelectorAll("a")
+let text = document.querySelector('#texte')
 
-link.addEventListener('click',()=>{
+links.forEach(link =>{
+link.addEventListener('click', (e)=>{
+ if(e.target.id === 'hide'){
+    text.style.display = 'none'
+ }else if(e.target.id === 'show'){
+    text.style.display = 'block'
+ }
+})
 })
